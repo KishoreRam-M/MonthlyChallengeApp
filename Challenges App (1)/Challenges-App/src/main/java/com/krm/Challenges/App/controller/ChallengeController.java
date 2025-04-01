@@ -62,15 +62,23 @@ public class ChallengeController {
     }
 
     @PutMapping("/challenges/{id}/complete")
-    public ResponseEntity<Challenge> markStatusAsCompltete(@PathVariable Long id)
-    {
-       Challenge challenge= challengeService.markAsComplete(id);
-        if (challengeService!=null)
-        {
+    public ResponseEntity<Challenge> markStatusAsCompltete(@PathVariable Long id) {
+        Challenge challenge = challengeService.markAsComplete(id);
+        if (challengeService != null) {
             return ResponseEntity.ok(challenge);
-        }
-        else {
+        } else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+    }
+
+    @GetMapping("/challenges/{id}/status")
+    public ResponseEntity<String> getStatus(@PathVariable Long id) throws Exception {
+        String status = challengeService.getStatus(id);
+        if (status != null) {
+
+            return ResponseEntity.ok(status);
+
+        }
+        return ResponseEntity.notFound().build();
     }
 }
