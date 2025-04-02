@@ -1,0 +1,122 @@
+body{
+  padding: 0;
+margin: 0;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.header .brand-name {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.header .tagline {
+  font-size: 1.5em;
+  margin: 20px 0;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #4CAF50;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.feature {
+  margin: 20px 0;
+}
+
+.feature h3 {
+  font-size: 1.8em;
+  color: #4CAF50;
+}
+
+.feature p {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+/* How it Works Section */
+.how-it-works {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.how-it-works h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.how-it-works p {
+  font-size: 1.3em;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1em;
+  margin: 5px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
