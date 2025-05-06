@@ -1,6 +1,6 @@
 # ⚡ Monthly Challenge App
 
-![Monthly Challenge App Banner](https://via.placeholder.com/1200x300/000000/FFD700?text=Monthly+Challenge+App)
+![Monthly Challenge App Banner](https://github.com/KishoreRam-M/MonthlyChallengeApp/blob/e1a58387f87822271eed3aaaff4d28f6a42a54ef/f59ab08d-3df2-46b4-bdbe-4b43407e77f8.jpg)
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React"/>
@@ -162,7 +162,7 @@ monthly-challenge-app/
 ## 🎨 UI Screenshots
 
 ### Landing Page
-![Landing Page](https://via.placeholder.com/600x300/000000/FFD700?text=Landing+Page)
+![Landing Page](https://github.com/KishoreRam-M/MonthlyChallengeApp/blob/e1a58387f87822271eed3aaaff4d28f6a42a54ef/f59ab08d-3df2-46b4-bdbe-4b43407e77f8.jpg)
 
 ### Challenge List
 ![Challenge List](https://via.placeholder.com/600x300/000000/FFD700?text=Challenge+List)
