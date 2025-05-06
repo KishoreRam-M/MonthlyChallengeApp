@@ -170,7 +170,7 @@ monthly-challenge-app/
 ![Challenge List](https://github.com/KishoreRam-M/MonthlyChallengeApp/blob/27d5dcee40b400322a167685f6231f99be2be025/b6fd9b2a-164c-4ce5-8e6e-22694bdd6562.jpg)
 
 ### Add Challenge Form
-![Add Challenge](https://via.placeholder.com/600x300/000000/FFD700?text=Add+Challenge)
+![Add Challenge](https://github.com/KishoreRam-M/MonthlyChallengeApp/blob/fd0b409f0d68a700091741118a98f3544e1e3b54/aaf52021-f21c-44f5-8ef8-630416b8cb34.jpg)
 
 ## 🧠 Design Decisions
 
