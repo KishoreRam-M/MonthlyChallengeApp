@@ -165,7 +165,9 @@ monthly-challenge-app/
 ![Landing Page](https://github.com/KishoreRam-M/MonthlyChallengeApp/blob/e1a58387f87822271eed3aaaff4d28f6a42a54ef/f59ab08d-3df2-46b4-bdbe-4b43407e77f8.jpg)
 
 ### Challenge List
-![Challenge List](https://via.placeholder.com/600x300/000000/FFD700?text=Challenge+List)
+![Challenge List](https://github.com/KishoreRam-M/MonthlyChallengeApp/blob/27d5dcee40b400322a167685f6231f99be2be025/b6fd9b2a-164c-4ce5-8e6e-22694bdd6562.jpg)
+### Completion of Challenge
+![Challenge List](https://github.com/KishoreRam-M/MonthlyChallengeApp/blob/27d5dcee40b400322a167685f6231f99be2be025/b6fd9b2a-164c-4ce5-8e6e-22694bdd6562.jpg)
 
 ### Add Challenge Form
 ![Add Challenge](https://via.placeholder.com/600x300/000000/FFD700?text=Add+Challenge)
