@@ -40,10 +40,6 @@ The Monthly Challenge App is a Batman-themed productivity tool designed to help 
 - Dark mode Batman-inspired design
 - Responsive layout that works on all devices
 
-## 🚀 Live Demo
-
-Check out the live demo of the app: [Monthly Challenge App](https://your-demo-url.com)
-
 ## 🔧 Tech Stack
 
 ### Frontend
