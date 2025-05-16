@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const AddChallenge = () => {
   const [month, setMonth] = useState('');
@@ -7,6 +8,8 @@ const AddChallenge = () => {
   const [about, setAbout] = useState('');
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(null);
+
+  const navigate = useNavigate(); // ✅ Initialize useNavigate() at the top
 
   // Validate input before sending
   const handleSubmit = async (e) => {
@@ -41,6 +44,10 @@ const AddChallenge = () => {
       setMonth('');
       setDescription('');
       setAbout('');
+
+      // ✅ Navigate to "/challenges" after 1 second
+      setTimeout(() => navigate("/challenges"), 1000);
+      
     } catch (error) {
       console.error("Error adding challenge:", error.response?.data || error.message);
       setError(error.response?.data?.message || "Failed to add challenge. Please try again.");

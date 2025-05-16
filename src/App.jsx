@@ -1,23 +1,15 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import ChallengeLists from './Components/ChallengeLists';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import axios from 'axios';
+import ChallengeLists from './Components/ChallengeLists';
 import AddChallenge from './Components/AddChallenge';
+import LandingPage from './Components/LandingPage';
+import NavBar from './Components/Navbar';
 
 function App() {
-  const [challenges, setChallenges] = useState([
-    { 
-      id: 1, 
-      month: 'June', 
-      description: 'First Challenge', 
-      status: 'complete', 
-      about: 'this is special', 
-      createdDate: '1/4/2025', 
-      finishedDate: '1/4/2005', 
-      deadline: '1/4/2005' 
-    }
-  ]);
-  const [error, setError] = useState(null);  // To handle any errors
+  const [challenges, setChallenges] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     const fetchChallenges = async () => {
@@ -25,24 +17,28 @@ function App() {
         const response = await axios.get('http://localhost:8080/challenges');
         setChallenges(response.data);
       } catch (err) {
-        setError("Failed to fetch challenges.");
-        console.error("Error fetching challenges:", err);
+        setError("⚠️ Failed to fetch challenges. Please try again later.");
+        console.error("❌ Error fetching challenges:", err);
       }
     };
     fetchChallenges();
   }, []);
 
   return (
-    <div className="container-fluid">
-      <h1 className="display-1 text-center p-1 mt-3 text-white">Monthly Challenge</h1>
-      
-      {/* Show error message if the API call fails */}
-      {error && <div className="alert alert-danger text-center">{error}</div>}
+    <Router>
+      <NavBar />
+      <div className="container-fluid mt-3">
+        {/* Show error message if the API call fails */}
+        {error && <div className="alert alert-danger text-center">{error}</div>}
 
-      <AddChallenge />
-      <ChallengeLists challenge={challenges} />
-    </div>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/challenges" element={<ChallengeLists challenge={challenges} />} />
+          <Route path="/add-challenge" element={<AddChallenge />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
-export default App;
+export default App
